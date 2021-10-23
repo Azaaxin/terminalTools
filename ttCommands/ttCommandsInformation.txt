@@ -1,0 +1,4 @@
+Commands:
+ addCustomCommand = create more commands.
+ newShortcut -name MyName = add this path to new command.
+Paths:
