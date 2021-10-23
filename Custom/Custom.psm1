@@ -1,5 +1,11 @@
-function ttScriptDirectory 
+﻿function ttScriptDirectory 
 {$PSScriptRoot}
+
+function getVsProjectPaths
+{Get-ChildItem -Path .\* -Include *.sln }
+
+function runapi
+{start (getVsProjectPaths)}
 
 $scriptPath = (ttScriptDirectory) + "\Custom.psm1"
 $helpPath = (ttScriptDirectory) + "\CustomInformation.txt"
