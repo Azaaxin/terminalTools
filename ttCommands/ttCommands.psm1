@@ -19,7 +19,7 @@ function addCustomCommand {
 }
 
 function ttHelp {
-    Import-Module Custom -Force
+    Import-Module ttCommands -Force
     echo $information
 }
 
@@ -41,6 +41,6 @@ function newShortcut {
         $message = "`nfunction " + $name + "`n{$path}"
         Add-Content $scriptPath $message
         Add-Content $helpPath $info
-        Import-Module Custom -Force
+        Import-Module ttCommands -Force
     }
 }
